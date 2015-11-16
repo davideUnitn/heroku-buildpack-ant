@@ -26,6 +26,11 @@ function indent() {
 }
 
 
+status_pending "Installing OpenJDK 1.8"
+install_java ${BUILD_DIR} 1.8
+jdk_overlay ${BUILD_DIR}
+
+
 #create the cache dir if it doesn't exist
 mkdir -p $VENDORING_DIR
 
