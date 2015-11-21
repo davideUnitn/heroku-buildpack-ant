@@ -29,7 +29,8 @@ JVM_COMMON_BUILDPACK=${JVM_COMMON_BUILDPACK:-https://codon-buildpacks.s3.amazona
 mkdir -p /tmp/jvm-common
 curl --silent --location $JVM_COMMON_BUILDPACK | tar xzm -C /tmp/jvm-common --strip-components=1
 
-echo `ls /tmp/jvm-common`
+echo `ls /tmp/jvm-common/bin`
+echo `ls /tmp/jvm-common/opt`
 
 . /tmp/jvm-common/bin/util
 . /tmp/jvm-common/bin/java
