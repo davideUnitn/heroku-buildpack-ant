@@ -34,6 +34,8 @@ curl --silent --location $JVM_COMMON_BUILDPACK | tar xzm -C /tmp/jvm-common --st
 install_java ${BUILD_DIR} 1.8
 jdk_overlay ${BUILD_DIR}
 
+echo `ls ${BUILD_DIR}`
+export JAVA_HOME=${BUILD_DIR}
 
 #create the cache dir if it doesn't exist
 mkdir -p $VENDORING_DIR
