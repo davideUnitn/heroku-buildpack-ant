@@ -2,7 +2,7 @@ Heroku buildpack: Java (with Apache Ant)
 =========================
 
 This is a [Heroku buildpack](http://devcenter.heroku.com/articles/buildpack) for Java apps.
-It uses Apache Ant 1.9.3 to build your application and OpenJDK 1.6.0_27 (currently) to run it.
+It uses Apache Ant 1.9.3 to build your application and it lets you specify which version of OpenJDK to use to run it.
 
 Usage
 -----
